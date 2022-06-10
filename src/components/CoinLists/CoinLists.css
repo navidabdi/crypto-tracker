@@ -1,0 +1,52 @@
+table.coin-list {
+  width: 100%;
+}
+table.coin-list thead {
+  display: flex;
+  padding: 1rem;
+}
+table.coin-list thead > tr {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+table.coin-list thead > tr > th {
+  width: 25%;
+  text-align: right;
+}
+table.coin-list thead > tr > th:first-child {
+  text-align: left;
+}
+table.coin-list > tbody > tr {
+  padding: 1.1rem 0;
+  display: flex;
+  align-items: center;
+}
+table.coin-list > tbody > tr > td {
+  width: 25%;
+  text-align: right;
+}
+th.coin-photo {
+  display: flex;
+  align-items: flex-start;
+  width: 25%;
+}
+th.coin-photo img {
+  width: 50px;
+  margin-right: 1rem;
+}
+.coin-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.coin-name .symbol {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.coin-name .name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-2);
+}
