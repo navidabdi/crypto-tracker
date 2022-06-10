@@ -1,0 +1,9 @@
+.hero {
+  padding: 5rem 0;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}

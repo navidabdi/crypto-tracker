@@ -1,11 +1,13 @@
 import './App.css';
+import { Header, Hero } from './components';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello Word</h1>
+      <Header />
+      <Hero />
     </div>
   );
-}
+};
 
 export default App;
