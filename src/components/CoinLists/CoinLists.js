@@ -1,6 +1,7 @@
 import React from 'react';
 import './CoinLists.css';
 import useCoins from '../../hooks/useCoins';
+import { numberWithCommas, changeNumColor } from '../../utils';
 
 const CoinLists = () => {
   const { coins, isLoading } = useCoins();
@@ -27,9 +28,17 @@ const CoinLists = () => {
                     <span className="name">{coin.name}</span>
                   </div>
                 </th>
-                <td>{coin.current_price}</td>
-                <td>{coin.price_change_percentage_24h}</td>
-                <td>{coin.market_cap}</td>
+                <td>{numberWithCommas(coin.current_price.toFixed(2))}</td>
+                <td
+                  style={{
+                    color: changeNumColor(coin.price_change_percentage_24h),
+                  }}
+                >
+                  {coin.price_change_percentage_24h.toFixed(2)}%
+                </td>
+                <td>
+                  {numberWithCommas(coin.market_cap.toString().slice(0, -6))} M
+                </td>
               </tr>
             ))}
         </tbody>
