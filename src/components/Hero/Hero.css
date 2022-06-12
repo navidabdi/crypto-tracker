@@ -1,9 +1,15 @@
 .hero {
-  padding: 5rem 0;
+  padding: 7rem 0;
   flex-direction: column;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url('../../img/hero1.svg');
 }
 .hero h1 {
   font-size: 3.6rem;
   font-weight: 900;
   padding-bottom: 1rem;
+  color: var(--color-6);
+}
+.hero p {
+  color: var(--color-6);
 }
