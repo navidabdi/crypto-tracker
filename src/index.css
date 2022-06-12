@@ -9,14 +9,15 @@
 }
 
 :root {
-  --color-1: #242f9b;
+  --color-1: #2c3263;
   --color-2: #646fd4;
   --color-3: #9ba3eb;
   --color-4: #dbdffd;
   --color-5: #f8f8ff;
   --color-6: #fff;
-  --color-title: #091269;
+  --color-title: #2c3263;
   --color-paragraph: #333864;
+  --color-paragraph-2: #858585;
 
   /* Transitions */
   --transition-1: all 0.3s ease;
@@ -54,6 +55,8 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .btn-primary {

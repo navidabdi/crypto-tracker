@@ -19,9 +19,12 @@ table.coin-list thead > tr > th:first-child {
   text-align: left;
 }
 table.coin-list > tbody > tr {
-  padding: 1.1rem 0;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
+}
+table.coin-list > tbody > tr:nth-child(2n + 1) {
+  background-color: var(--color-6);
 }
 table.coin-list > tbody > tr > td {
   width: 25%;
@@ -33,8 +36,12 @@ th.coin-photo {
   width: 25%;
 }
 th.coin-photo img {
-  width: 50px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
   margin-right: 1rem;
+  background-color: var(--color-4);
+  border-radius: 50%;
 }
 .coin-name {
   display: flex;
@@ -42,11 +49,11 @@ th.coin-photo img {
   align-items: flex-start;
 }
 .coin-name .symbol {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 .coin-name .name {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
-  color: var(--color-2);
+  color: var(--color-paragraph-2);
 }
