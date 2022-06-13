@@ -1,13 +1,18 @@
 import './App.css';
-import { Header, Hero, CoinLists } from './components';
+import { Header } from './components';
+import { HomePage, CoinPage } from './Pages';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Header />
-      <Hero />
-      <CoinLists />
-    </div>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/coins" element={<CoinPage />} />
+      </Routes>
+    </>
   );
 };
 
