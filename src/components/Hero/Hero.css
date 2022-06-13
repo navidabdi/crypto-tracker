@@ -1,15 +1,22 @@
 .hero {
   padding: 7rem 0;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(
+      to right,
+      rgba(5, 27, 126, 0.6),
+      rgba(52, 89, 255, 0.4)
+    ),
     url('../../img/hero1.svg');
+  margin-bottom: 2rem;
 }
 .hero h1 {
   font-size: 3.6rem;
   font-weight: 900;
   padding-bottom: 1rem;
   color: var(--color-6);
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 .hero p {
   color: var(--color-6);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }

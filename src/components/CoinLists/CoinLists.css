@@ -1,5 +1,6 @@
 table.coin-list {
   width: 100%;
+  margin-bottom: 2rem;
 }
 table.coin-list thead {
   display: flex;
