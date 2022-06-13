@@ -50,6 +50,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333864;
   background-color: var(--color-5);
+  font-weight: 500;
 }
 
 .container {
